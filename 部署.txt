@@ -1,2 +1,4 @@
 1、删除package_lock.json
 2、npm i
+3、主题下载：
+git clone -b dev https://github.com.cnpmjs.org/jerryc127/hexo-theme-butterfly.git themes/butterfly
