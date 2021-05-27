@@ -5,7 +5,8 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "本地服务": "hexo server",
+    "[主题]安装": "git clone -b dev https://github.com.cnpmjs.org/jerryc127/hexo-theme-butterfly.git themes/butterfly",
+    "[服务]启动": "hexo server",
     "清理+编译": "hexo clean && hexo g",
     "发布": "hexo deploy"
   },
