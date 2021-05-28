@@ -1,5 +1,8 @@
 ---
 title: 搭建Hexo博客
+tags: 
+- Hexo
+- 博客
 ---
 
 - [x] **hexo搭建** 
@@ -23,6 +26,6 @@ const GIT_REPO_URL = 'https://github.com **.cnpmjs.org** /hexojs/hexo-starter
 参考：https://cloud.tencent.com/developer/article/1662782
 - [x] **hexo d提交报警告：warning: CRLF will be replaced by LF in public/assets/css/style.css** 
 解决方法，参考：https://www.codegrepper.com/code-examples/whatever/warning%3A+CRLF+will+be+replaced+by+LF+in+public%2Fassets%2Fcss%2Fstyle.css.
-```
+```shell
 git config --global core.autocrlf input
 ```
