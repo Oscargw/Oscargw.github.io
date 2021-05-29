@@ -53,7 +53,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2021-05-29 17:37:40'
+  postUpdate: '2021-05-29 21:03:43'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -146,7 +146,7 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
 
     content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
     content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
-    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[代码]') // replace code
     content = content.replace(/<[^>]+>/g,"") // remove html tag
 
     if (content.length > 150) {
@@ -155,11 +155,26 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
     return content
   }
 
-  const getIcon = (avatar,mail) => {
-    if (avatar) return avatar
-    let defaultIcon = '?d=monsterid'
-    let iconUrl = `https://gravatar.loli.net/avatar/${mail + defaultIcon}`
-    return iconUrl
+  const getComment = () => {
+    fetch('https://disqus.com/api/3.0/forums/listPosts.json?forum=&related=thread&limit=6&api_key=e3zqPoIRaZuOS7j7mDzp8Hyw2polpSOoxQNMNgbNTm5Pk9ioNVjPRJfA4Cz7WDEK')
+      .then(response => response.json())
+      .then(data => {
+        const disqusArray = data.response.map(item => {
+          return {
+            'avatar': item.author.avatar.cache,
+            'content': changeContent(item.message),
+            'nick': item.author.name,
+            'url': item.url,
+            'date': item.createdAt
+          }
+        })
+
+        saveToLocal.set('disqus-newest-comments', JSON.stringify(disqusArray), 10/(60*24))
+        generateHtml(disqusArray)
+      }).catch(e => {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+      })
   }
 
   const generateHtml = array => {
@@ -173,10 +188,10 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
           const name = 'src'
           result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
         }
-
+        
         result += `<div class='content'>
         <a class='comment' href='${array[i].url}'>${array[i].content}</a>
-        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        <div class='name'><span>${array[i].nick}</span><time> / ${btf.diffDate(array[i].date, true)}</time></div>
         </div></div>`
       }
     } else {
@@ -189,37 +204,9 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
     window.pjax && window.pjax.refresh($dom)
   }
 
-  const getComment = () => {
-    const loadWaline = () => {
-      Waline.Widget.RecentComments({
-        el: '#card-newest-comments .aside-list',
-        serverURL: 'https://imnerd-api-2tli2m0fq-oscargw.vercel.app',
-        count: 6
-      }).then(comments => {
-        const walineArray = comments.map(function (e) {
-          return {
-            'content': changeContent(e.comment),
-            'avatar': getIcon(e.QQAvatar,e.mail),
-            'nick': e.nick,
-            'url': e.url + '#' + e.objectId,
-            'date': e.updatedAt,
-          }
-        })
-        saveToLocal.set('waline-newest-comments', JSON.stringify(walineArray), 10/(60*24))
-        generateHtml(walineArray)
-      }).catch(e => {
-        const $dom = document.querySelector('#card-newest-comments .aside-list')
-        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
-      }) 
-    }
-
-    if (typeof Waline === 'function') loadWaline() 
-    else getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js').then(loadWaline)
-  }
-
   const newestCommentInit = () => {
     if (document.querySelector('#card-newest-comments .aside-list')) {
-      const data = saveToLocal.get('waline-newest-comments')
+      const data = saveToLocal.get('disqus-newest-comments')
       if (data) {
         generateHtml(JSON.parse(data))
       } else {
