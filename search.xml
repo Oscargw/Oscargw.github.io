@@ -21,4 +21,21 @@
         <tag>博客</tag>
       </tags>
   </entry>
+  <entry>
+    <title>给博客添加Waline评论</title>
+    <url>/2021/05/31/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0Waline%E8%AF%84%E8%AE%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
+<li>参考文档：<br><a href="https://waline.js.org/get-started.html#vercel-%E9%83%A8%E7%BD%B2">Waline-快速上手</a></li>
+<li>需要使用LeanCloud，参考：<br><a href="https://console.leancloud.app/apps">LeanCloud - https://console.leancloud.app/apps</a></li>
+<li>Vercel部署：<br>直接点击：<a href="https://vercel.com/new/git/external?repository-url=https://github.com/walinejs/waline/tree/main/example">Vercel</a><br>一定要从leancloud拿到 <strong>LEAN_ID</strong>，<strong>LEAN_KEY</strong>，<strong>LEAN_MASTER_KEY</strong></li>
+<li>获取serverURL<br>部署后，点击visit，拿到serverURL， <a href="https://xxxxxx.vercel.app,配置到主题.xml/">https://xxxxxx.vercel.app，配置到主题.xml</a></li>
+<li>注册管理员。<br>点击<serverURL>/ui/register注册。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+        <tag>waline</tag>
+      </tags>
+  </entry>
 </search>
