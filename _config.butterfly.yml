@@ -263,8 +263,8 @@ comments:
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
   # - Valine
-  - Disqus
-  # - Waline
+  # - Disqus
+  - Waline
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -331,7 +331,7 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://imnerd-api-2tli2m0fq-oscargw.vercel.app # Waline server address url
+  serverURL: https://waline-api-6215yt46a-oscargw.vercel.app # Waline server address url
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
   emojiCDN: # emoji CDN
   bg: # waline background
@@ -691,7 +691,7 @@ runtimeshow:
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: false
+  enable: true
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
@@ -702,11 +702,11 @@ newest_comments:
     enable: false
     repo:
   disqus:
-    enable: true
+    enable: false
     forum:
     api_key: e3zqPoIRaZuOS7j7mDzp8Hyw2polpSOoxQNMNgbNTm5Pk9ioNVjPRJfA4Cz7WDEK
   twikoo: false
-  waline: false
+  waline: true
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
