@@ -1,5 +1,6 @@
 ---
 title: 给博客添加Waline评论
+cover: https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210531134704.png
 tags: 
 - Hexo
 - 博客
