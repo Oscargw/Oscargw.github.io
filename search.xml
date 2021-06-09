@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CentOS8国内镜像下载地址</title>
-    <url>/2021/06/05/CentOS8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="CentOS介绍"><a href="#CentOS介绍" class="headerlink" title="CentOS介绍"></a>CentOS介绍</h2><p>  CentOS 是基于 Red Hat Enterprise Linux (RHEL / 业界最知名的发行版) 源代码再编译出来的免费版，因此不仅继承 RHEL 优越的稳定性（与 Debian 不分上下），还提供免费更新，因此在服务器提供商、中小型公司中装机量几乎是最大最流行的 Linux 系统，现在也已正式加入红帽公司。从事互联网技术的同学，CentOS 应该是值得你深入了解学习研究的……</p>
-<h2 id="CentOS-Linux-和-CentOS-Stream-区别"><a href="#CentOS-Linux-和-CentOS-Stream-区别" class="headerlink" title="CentOS Linux 和 CentOS Stream 区别"></a>CentOS Linux 和 CentOS Stream 区别</h2><p>在 CentOS 的官网上，你会看到有两个不同的版本 CentOS Linux 和 CentOS Stream。其中 CentOS Linux 就是我们传统使用的稳定版系统。那么 CentOS Stream 是什么版本呢？</p>
-<p>其实 Centos Stream 是一个面向开发者的滚动发布的 Linux 发行版，它介于 Fedora Linux 的上游开发和 RHEL 的下游开发之间而存在。你可以把 CentOS Streams 当成是用来体验最新红帽系 Linux 特性的一个版本。</p>
-<p>因此，如果你不是开发者，并打算将 CentOS 用于服务器，用于正式生产环境使用、追求稳定性，或者个人日常使用，都更推荐使用传统的 CentOS Linux 这个版本。</p>
-<h2 id="镜像下载说明"><a href="#镜像下载说明" class="headerlink" title="镜像下载说明"></a>镜像下载说明</h2><p><a href="https://mirrors.aliyun.com/centos/8/isos/x86_64/">阿里CentOS8下载</a></p>
-<p><a href="https://mirrors.tuna.tsinghua.edu.cn/centos/8/isos/x86_64/">清华CentOS8下载</a></p>
-<p><a href="https://www.centos.org/download/">CentOS8官网下载</a></p>
-]]></content>
-      <tags>
-        <tag>CentOS</tag>
-        <tag>CentOS8</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搭建Hexo博客</title>
     <url>/2021/05/27/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
@@ -35,6 +19,52 @@
       <tags>
         <tag>Hexo</tag>
         <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>玩skynet服务器（一）</title>
+    <url>/2021/06/08/%E7%8E%A9skynet%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><ul>
+<li><a href="https://github.com/cloudwu/skynet/wiki">Home</a></li>
+<li><a href="https://github.com/cloudwu/skynet/wiki/GettingStarted">GettingStarted</a></li>
+<li><a href="https://github.com/cloudwu/skynet/wiki/Community">社区</a></li>
+</ul>
+<p>skynet，github链接：<br><a href="https://github.com/cloudwu/skynet/">https://github.com/cloudwu/skynet/</a></p>
+<h3 id="实操踩坑"><a href="#实操踩坑" class="headerlink" title="实操踩坑"></a>实操踩坑</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/cloudwu/skynet.git</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 替换为cnpmjs.org:</span></span><br><span class="line">git clone https://github.com.cnpmjs.org/cloudwu/skynet.git</span><br><span class="line">cd skynet</span><br><span class="line">make &#x27;linux&#x27; # make &#x27;PLATFORM&#x27;  # PLATFORM can be linux, macosx, freebsd now</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>提示报错：</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210608142947.png"></p>
+<p>缺少make。解决方法 - 运行安装make命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum install gcc automake autoconf libtool make</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>提示报错：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">autoconf: command not found</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 解决方法：</span></span><br><span class="line">yum install autoconf</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>skynet</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CentOS8国内镜像下载地址</title>
+    <url>/2021/06/05/CentOS8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="CentOS介绍"><a href="#CentOS介绍" class="headerlink" title="CentOS介绍"></a>CentOS介绍</h2><p>  CentOS 是基于 Red Hat Enterprise Linux (RHEL / 业界最知名的发行版) 源代码再编译出来的免费版，因此不仅继承 RHEL 优越的稳定性（与 Debian 不分上下），还提供免费更新，因此在服务器提供商、中小型公司中装机量几乎是最大最流行的 Linux 系统，现在也已正式加入红帽公司。从事互联网技术的同学，CentOS 应该是值得你深入了解学习研究的……</p>
+<h2 id="CentOS-Linux-和-CentOS-Stream-区别"><a href="#CentOS-Linux-和-CentOS-Stream-区别" class="headerlink" title="CentOS Linux 和 CentOS Stream 区别"></a>CentOS Linux 和 CentOS Stream 区别</h2><p>在 CentOS 的官网上，你会看到有两个不同的版本 CentOS Linux 和 CentOS Stream。其中 CentOS Linux 就是我们传统使用的稳定版系统。那么 CentOS Stream 是什么版本呢？</p>
+<p>其实 Centos Stream 是一个面向开发者的滚动发布的 Linux 发行版，它介于 Fedora Linux 的上游开发和 RHEL 的下游开发之间而存在。你可以把 CentOS Streams 当成是用来体验最新红帽系 Linux 特性的一个版本。</p>
+<p>因此，如果你不是开发者，并打算将 CentOS 用于服务器，用于正式生产环境使用、追求稳定性，或者个人日常使用，都更推荐使用传统的 CentOS Linux 这个版本。</p>
+<h2 id="镜像下载说明"><a href="#镜像下载说明" class="headerlink" title="镜像下载说明"></a>镜像下载说明</h2><p><a href="https://mirrors.aliyun.com/centos/8/isos/x86_64/">阿里CentOS8下载</a></p>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/centos/8/isos/x86_64/">清华CentOS8下载</a></p>
+<p><a href="https://www.centos.org/download/">CentOS8官网下载</a></p>
+]]></content>
+      <tags>
+        <tag>CentOS</tag>
+        <tag>CentOS8</tag>
       </tags>
   </entry>
   <entry>
