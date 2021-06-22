@@ -17,6 +17,52 @@
       </tags>
   </entry>
   <entry>
+    <title>Vue前端 Node后台</title>
+    <url>/2020/12/31/Vue%20Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>前端入坑，摸索Electron、VUE、Node等多个知识，想搭建一套VUE+Node的后台工具框架，作为入手。</p>
+<h2 id="搭建Demo项目"><a href="#搭建Demo项目" class="headerlink" title="搭建Demo项目"></a>搭建Demo项目</h2><h3 id="框架设计"><a href="#框架设计" class="headerlink" title="框架设计"></a>框架设计</h3><p>前端 ： Node+Vue，<br>后台 ：NodeJS<br>通信 ：Socket</p>
+<h3 id="前端搭建"><a href="#前端搭建" class="headerlink" title="前端搭建"></a>前端搭建</h3><p>必要插件列表：</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Node</li>
+<li><input checked="" disabled="" type="checkbox"> Vue（Vuetify）</li>
+<li><input checked="" disabled="" type="checkbox"> TypeScript</li>
+<li><input checked="" disabled="" type="checkbox"> Socket</li>
+</ul>
+<h3 id="后台搭建"><a href="#后台搭建" class="headerlink" title="后台搭建"></a>后台搭建</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> Node</li>
+<li><input checked="" disabled="" type="checkbox"> Socket</li>
+</ul>
+<h5 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h5>]]></content>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Node</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vuetify前端搭建</title>
+    <url>/2020/12/31/Vuetify%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><ol>
+<li><p>启动vue-cli：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">输入：vue ui</span><br></pre></td></tr></table></figure></li>
+<li><p>参考：<br> <a href="https://blog.csdn.net/qq_42711864/article/details/85704099">https://blog.csdn.net/qq_42711864/article/details/85704099</a></p>
+</li>
+<li><p>添加vuetify：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">选择：vue add vuetify</span><br></pre></td></tr></table></figure></li>
+<li><p>main.ts代码：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">import Vue from &quot;vue&quot;;</span><br><span class="line">// import Vuetify from &quot;vuetify&quot;;</span><br><span class="line">import App from &quot;./App.vue&quot;;</span><br><span class="line">import Test from &#x27;./views/Test.vue&#x27;;</span><br><span class="line">import router from &quot;./router&quot;;</span><br><span class="line">import store from &quot;./store&quot;;</span><br><span class="line">import &quot;vuetify/dist/vuetify.min.css&quot;; //css 需引入</span><br><span class="line">import &quot;material-design-icons-iconfont/dist/material-design-icons.css&quot;; //vuetify依赖的图标</span><br><span class="line">import vuetify from &quot;./plugins/vuetify&quot;;</span><br><span class="line"></span><br><span class="line">// Vue.use(Vuetify);</span><br><span class="line">Vue.config.productionTip = false;</span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">  router,</span><br><span class="line">  store,</span><br><span class="line">  vuetify,</span><br><span class="line">  render: h =&gt; h(Test)</span><br><span class="line">&#125;).$mount(&quot;#app&quot;);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h5 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h5><ul>
+<li><a href="https://vuetifyjs.com/en/getting-started/installation/#vue-cli-install">Vue官网</a></li>
+<li><a href="https://blog.csdn.net/u011737005/article/details/105822944">vue+vuetify+typescript中添加vuetify声明</a></li>
+<li><a href="https://blog.csdn.net/qq_42711864/article/details/85704099">TypeScript+Vue+vuetify的项目搭建</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Vuetify</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CentOS7 自动获取IP地址图文详解</title>
     <url>/2021/06/19/CentOs7%20%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96IP%E5%9C%B0%E5%9D%80%E5%9B%BE%E6%96%87%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>环境:<br>VMware workstation 12<br>CentOs7</p>
@@ -41,27 +87,6 @@
       <tags>
         <tag>CentOS</tag>
         <tag>CentOS7</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>搭建Hexo博客</title>
-    <url>/2021/05/27/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
-<li><p><strong>hexo搭建</strong><br>参考：<a href="https://eliyar.biz/how_to_build_hexo_blog/">https://eliyar.biz/how_to_build_hexo_blog/</a></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm i hexo-cli -g</span><br><span class="line">hexo init</span><br><span class="line">npm i</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
-<li><p><strong>hexo编译报错</strong><br>解决方法：node10升级到node14.</p>
-</li>
-<li><p><strong>hexo init 卡主</strong><br>解决方法：<br>D:\nodejs\node_global\node_modules\hexo-cli\lib\console\init.js文件中，<br>const GIT_REPO_URL = ‘<a href="https://github.com/hexojs/hexo-starter.git&#39;">https://github.com/hexojs/hexo-starter.git&#39;</a> 修改为：<br>const GIT_REPO_URL = ‘<a href="https://github.com/">https://github.com</a> <strong>.cnpmjs.org</strong> /hexojs/hexo-starter.git’;</p>
-</li>
-<li><p><strong>github部署</strong><br>参考：<a href="https://cloud.tencent.com/developer/article/1662782">https://cloud.tencent.com/developer/article/1662782</a></p>
-</li>
-<li><p><strong>hexo d提交报警告：warning: CRLF will be replaced by LF in public/assets/css/style.css</strong><br>解决方法，参考：<a href="https://www.codegrepper.com/code-examples/whatever/warning%3A+CRLF+will+be+replaced+by+LF+in+public%2Fassets%2Fcss%2Fstyle.css">https://www.codegrepper.com/code-examples/whatever/warning%3A+CRLF+will+be+replaced+by+LF+in+public%2Fassets%2Fcss%2Fstyle.css</a>.</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global core.autocrlf input</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
@@ -109,6 +134,27 @@
         <tag>Hexo</tag>
         <tag>博客</tag>
         <tag>waline</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建Hexo博客</title>
+    <url>/2021/05/27/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
+<li><p><strong>hexo搭建</strong><br>参考：<a href="https://eliyar.biz/how_to_build_hexo_blog/">https://eliyar.biz/how_to_build_hexo_blog/</a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm i hexo-cli -g</span><br><span class="line">hexo init</span><br><span class="line">npm i</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>hexo编译报错</strong><br>解决方法：node10升级到node14.</p>
+</li>
+<li><p><strong>hexo init 卡主</strong><br>解决方法：<br>D:\nodejs\node_global\node_modules\hexo-cli\lib\console\init.js文件中，<br>const GIT_REPO_URL = ‘<a href="https://github.com/hexojs/hexo-starter.git&#39;">https://github.com/hexojs/hexo-starter.git&#39;</a> 修改为：<br>const GIT_REPO_URL = ‘<a href="https://github.com/">https://github.com</a> <strong>.cnpmjs.org</strong> /hexojs/hexo-starter.git’;</p>
+</li>
+<li><p><strong>github部署</strong><br>参考：<a href="https://cloud.tencent.com/developer/article/1662782">https://cloud.tencent.com/developer/article/1662782</a></p>
+</li>
+<li><p><strong>hexo d提交报警告：warning: CRLF will be replaced by LF in public/assets/css/style.css</strong><br>解决方法，参考：<a href="https://www.codegrepper.com/code-examples/whatever/warning%3A+CRLF+will+be+replaced+by+LF+in+public%2Fassets%2Fcss%2Fstyle.css">https://www.codegrepper.com/code-examples/whatever/warning%3A+CRLF+will+be+replaced+by+LF+in+public%2Fassets%2Fcss%2Fstyle.css</a>.</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global core.autocrlf input</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
