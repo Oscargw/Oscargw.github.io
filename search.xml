@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Visual Studio 2019密钥</title>
-    <url>/2021/06/24/Visual%20Studio%202019%E5%AF%86%E9%92%A5/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Visual Studio 2019 Enterprise（企业版）：<strong>BF8Y8-GN2QH-T84XB-QVY3B-RC4DF</strong></p>
-<p>Visual Studio 2019 Professional（专业版）：<strong>NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y</strong></p>
-]]></content>
-      <tags>
-        <tag>Visual Studio</tag>
-        <tag>密钥</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CentOS8国内镜像下载地址</title>
-    <url>/2021/06/05/CentOS8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/</url>
+    <url>/2021/11/16/CentOS8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="CentOS介绍"><a href="#CentOS介绍" class="headerlink" title="CentOS介绍"></a>CentOS介绍</h2><p>  CentOS 是基于 Red Hat Enterprise Linux (RHEL / 业界最知名的发行版) 源代码再编译出来的免费版，因此不仅继承 RHEL 优越的稳定性（与 Debian 不分上下），还提供免费更新，因此在服务器提供商、中小型公司中装机量几乎是最大最流行的 Linux 系统，现在也已正式加入红帽公司。从事互联网技术的同学，CentOS 应该是值得你深入了解学习研究的……</p>
 <h2 id="CentOS-Linux-和-CentOS-Stream-区别"><a href="#CentOS-Linux-和-CentOS-Stream-区别" class="headerlink" title="CentOS Linux 和 CentOS Stream 区别"></a>CentOS Linux 和 CentOS Stream 区别</h2><p>在 CentOS 的官网上，你会看到有两个不同的版本 CentOS Linux 和 CentOS Stream。其中 CentOS Linux 就是我们传统使用的稳定版系统。那么 CentOS Stream 是什么版本呢？</p>
 <p>其实 Centos Stream 是一个面向开发者的滚动发布的 Linux 发行版，它介于 Fedora Linux 的上游开发和 RHEL 的下游开发之间而存在。你可以把 CentOS Streams 当成是用来体验最新红帽系 Linux 特性的一个版本。</p>
@@ -28,30 +17,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Vue前端 Node后台</title>
-    <url>/2020/12/31/Vue%20Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>前端入坑，摸索Electron、VUE、Node等多个知识，想搭建一套VUE+Node的后台工具框架，作为入手。</p>
-<h2 id="搭建Demo项目"><a href="#搭建Demo项目" class="headerlink" title="搭建Demo项目"></a>搭建Demo项目</h2><h3 id="框架设计"><a href="#框架设计" class="headerlink" title="框架设计"></a>框架设计</h3><p>前端 ： Node+Vue，<br>后台 ：NodeJS<br>通信 ：Socket</p>
-<h3 id="前端搭建"><a href="#前端搭建" class="headerlink" title="前端搭建"></a>前端搭建</h3><p>必要插件列表：</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Node</li>
-<li><input checked="" disabled="" type="checkbox"> Vue（Vuetify）</li>
-<li><input checked="" disabled="" type="checkbox"> TypeScript</li>
-<li><input checked="" disabled="" type="checkbox"> Socket</li>
-</ul>
-<h3 id="后台搭建"><a href="#后台搭建" class="headerlink" title="后台搭建"></a>后台搭建</h3><ul>
-<li><input checked="" disabled="" type="checkbox"> Node</li>
-<li><input checked="" disabled="" type="checkbox"> Socket</li>
-</ul>
-<h5 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h5>]]></content>
+    <title>Visual Studio 2019密钥</title>
+    <url>/2021/06/24/Visual%20Studio%202019%E5%AF%86%E9%92%A5/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Visual Studio 2019 Enterprise（企业版）：<strong>BF8Y8-GN2QH-T84XB-QVY3B-RC4DF</strong></p>
+<p>Visual Studio 2019 Professional（专业版）：<strong>NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y</strong></p>
+]]></content>
       <tags>
-        <tag>Vue</tag>
-        <tag>Node</tag>
+        <tag>Visual Studio</tag>
+        <tag>密钥</tag>
       </tags>
   </entry>
   <entry>
     <title>CentOS7 自动获取IP地址图文详解</title>
-    <url>/2021/06/19/CentOs7%20%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96IP%E5%9C%B0%E5%9D%80%E5%9B%BE%E6%96%87%E8%AF%A6%E8%A7%A3/</url>
+    <url>/2021/11/16/CentOs7%20%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96IP%E5%9C%B0%E5%9D%80%E5%9B%BE%E6%96%87%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>环境:<br>VMware workstation 12<br>CentOs7</p>
 <p>当我们在VMware workstation 安装好CentOs后，IP地址默认不是自动获取的，如下图：<br><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151648.png"></p>
 <p>要设置CentOs7自动获取IP地址，需要进入系统网络配置文件夹，输入命令 ： “cd /etc/sysconfig/network-scripts/”，然后再输入 “ls” ,如下图所示：</p>
@@ -77,8 +55,54 @@
       </tags>
   </entry>
   <entry>
+    <title>Vue前端 Node后台</title>
+    <url>/2020/12/31/Vue%20Node%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>前端入坑，摸索Electron、VUE、Node等多个知识，想搭建一套VUE+Node的后台工具框架，作为入手。</p>
+<h2 id="搭建Demo项目"><a href="#搭建Demo项目" class="headerlink" title="搭建Demo项目"></a>搭建Demo项目</h2><h3 id="框架设计"><a href="#框架设计" class="headerlink" title="框架设计"></a>框架设计</h3><p>前端 ： Node+Vue，<br>后台 ：NodeJS<br>通信 ：Socket</p>
+<h3 id="前端搭建"><a href="#前端搭建" class="headerlink" title="前端搭建"></a>前端搭建</h3><p>必要插件列表：</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Node</li>
+<li><input checked="" disabled="" type="checkbox"> Vue（Vuetify）</li>
+<li><input checked="" disabled="" type="checkbox"> TypeScript</li>
+<li><input checked="" disabled="" type="checkbox"> Socket</li>
+</ul>
+<h3 id="后台搭建"><a href="#后台搭建" class="headerlink" title="后台搭建"></a>后台搭建</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> Node</li>
+<li><input checked="" disabled="" type="checkbox"> Socket</li>
+</ul>
+<h5 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h5>]]></content>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Node</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vuetify前端搭建</title>
+    <url>/2020/12/31/Vuetify%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><ol>
+<li><p>启动vue-cli：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">输入：vue ui</span><br></pre></td></tr></table></figure></li>
+<li><p>参考：<br> <a href="https://blog.csdn.net/qq_42711864/article/details/85704099">https://blog.csdn.net/qq_42711864/article/details/85704099</a></p>
+</li>
+<li><p>添加vuetify：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">选择：vue add vuetify</span><br></pre></td></tr></table></figure></li>
+<li><p>main.ts代码：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">import Vue from &quot;vue&quot;;</span><br><span class="line">// import Vuetify from &quot;vuetify&quot;;</span><br><span class="line">import App from &quot;./App.vue&quot;;</span><br><span class="line">import Test from &#x27;./views/Test.vue&#x27;;</span><br><span class="line">import router from &quot;./router&quot;;</span><br><span class="line">import store from &quot;./store&quot;;</span><br><span class="line">import &quot;vuetify/dist/vuetify.min.css&quot;; //css 需引入</span><br><span class="line">import &quot;material-design-icons-iconfont/dist/material-design-icons.css&quot;; //vuetify依赖的图标</span><br><span class="line">import vuetify from &quot;./plugins/vuetify&quot;;</span><br><span class="line"></span><br><span class="line">// Vue.use(Vuetify);</span><br><span class="line">Vue.config.productionTip = false;</span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">  router,</span><br><span class="line">  store,</span><br><span class="line">  vuetify,</span><br><span class="line">  render: h =&gt; h(Test)</span><br><span class="line">&#125;).$mount(&quot;#app&quot;);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h5 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h5><ul>
+<li><a href="https://vuetifyjs.com/en/getting-started/installation/#vue-cli-install">Vue官网</a></li>
+<li><a href="https://blog.csdn.net/u011737005/article/details/105822944">vue+vuetify+typescript中添加vuetify声明</a></li>
+<li><a href="https://blog.csdn.net/qq_42711864/article/details/85704099">TypeScript+Vue+vuetify的项目搭建</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Vuetify</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建Hexo博客</title>
-    <url>/2021/05/27/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
+    <url>/2021/11/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
 <li><p><strong>hexo搭建</strong><br>参考：<a href="https://eliyar.biz/how_to_build_hexo_blog/">https://eliyar.biz/how_to_build_hexo_blog/</a></p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm i hexo-cli -g</span><br><span class="line">hexo init</span><br><span class="line">npm i</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
@@ -99,7 +123,7 @@
   </entry>
   <entry>
     <title>玩skynet服务器（一）</title>
-    <url>/2021/06/08/%E7%8E%A9skynet%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <url>/2021/11/16/%E7%8E%A9skynet%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88%E4%B8%80%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><ul>
 <li><a href="https://github.com/cloudwu/skynet/wiki">Home</a></li>
 <li><a href="https://github.com/cloudwu/skynet/wiki/GettingStarted">GettingStarted</a></li>
@@ -129,7 +153,7 @@
   </entry>
   <entry>
     <title>给博客添加Waline评论</title>
-    <url>/2021/05/31/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0Waline%E8%AF%84%E8%AE%BA/</url>
+    <url>/2021/11/16/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0Waline%E8%AF%84%E8%AE%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
 <li>参考文档：<br><a href="https://waline.js.org/get-started.html#vercel-%E9%83%A8%E7%BD%B2">Waline-快速上手</a></li>
 <li>需要使用LeanCloud，参考：<br><a href="https://console.leancloud.app/apps">LeanCloud - https://console.leancloud.app/apps</a></li>
@@ -145,32 +169,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Vuetify前端搭建</title>
-    <url>/2020/12/31/Vuetify%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><ol>
-<li><p>启动vue-cli：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">输入：vue ui</span><br></pre></td></tr></table></figure></li>
-<li><p>参考：<br> <a href="https://blog.csdn.net/qq_42711864/article/details/85704099">https://blog.csdn.net/qq_42711864/article/details/85704099</a></p>
-</li>
-<li><p>添加vuetify：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">选择：vue add vuetify</span><br></pre></td></tr></table></figure></li>
-<li><p>main.ts代码：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">import Vue from &quot;vue&quot;;</span><br><span class="line">// import Vuetify from &quot;vuetify&quot;;</span><br><span class="line">import App from &quot;./App.vue&quot;;</span><br><span class="line">import Test from &#x27;./views/Test.vue&#x27;;</span><br><span class="line">import router from &quot;./router&quot;;</span><br><span class="line">import store from &quot;./store&quot;;</span><br><span class="line">import &quot;vuetify/dist/vuetify.min.css&quot;; //css 需引入</span><br><span class="line">import &quot;material-design-icons-iconfont/dist/material-design-icons.css&quot;; //vuetify依赖的图标</span><br><span class="line">import vuetify from &quot;./plugins/vuetify&quot;;</span><br><span class="line"></span><br><span class="line">// Vue.use(Vuetify);</span><br><span class="line">Vue.config.productionTip = false;</span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">  router,</span><br><span class="line">  store,</span><br><span class="line">  vuetify,</span><br><span class="line">  render: h =&gt; h(Test)</span><br><span class="line">&#125;).$mount(&quot;#app&quot;);</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h5 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h5><ul>
-<li><a href="https://vuetifyjs.com/en/getting-started/installation/#vue-cli-install">Vue官网</a></li>
-<li><a href="https://blog.csdn.net/u011737005/article/details/105822944">vue+vuetify+typescript中添加vuetify声明</a></li>
-<li><a href="https://blog.csdn.net/qq_42711864/article/details/85704099">TypeScript+Vue+vuetify的项目搭建</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Vue</tag>
-        <tag>Vuetify</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>网页收藏（私人）</title>
-    <url>/2021/05/31/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F%EF%BC%88%E7%A7%81%E4%BA%BA%EF%BC%89/</url>
+    <url>/2021/11/16/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F%EF%BC%88%E7%A7%81%E4%BA%BA%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
 <li><a href="https://www.markdown.xyz/">Markdown基本语法</a></li>
 </ul>
