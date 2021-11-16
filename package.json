@@ -6,7 +6,7 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "server": "hexo server",
-    "[主题]安装": "git clone -b dev https://github.com.cnpmjs.org/jerryc127/hexo-theme-butterfly.git themes/butterfly",
+    "[主题]安装": "git clone -b 3.8.4 https://github.com.cnpmjs.org/jerryc127/hexo-theme-butterfly.git themes/butterfly",
     "清理+编译": "hexo clean && hexo g",
     "清理+编译+启动": "hexo clean && hexo g && hexo server",
     "发布": "hexo deploy"
