@@ -216,4 +216,52 @@
         <tag>收藏</tag>
       </tags>
   </entry>
+  <entry>
+    <title>windows10下安装MSYS2+MinGW64</title>
+    <url>/2021/11/18/windows10%E4%B8%8B%E5%AE%89%E8%A3%85MSYS2+MinGW64/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
+<li><p>下载msys2，官方地址：<a href="http://www.msys2.org/%EF%BC%8C%E8%BF%99%E9%87%8C%E9%80%89%E6%8B%A964%E4%BD%8D%E7%9A%84%E5%AE%89%E8%A3%85%E5%99%A8">http://www.msys2.org/，这里选择64位的安装器</a></p>
+</li>
+<li><p>安装完成之后，先别启动msys2，在 安装根目录/etc/pacman.d/ 下找到mirrorlist.mingw32、mirrorlist.mingw64和mirrorlist.msys并进行修改。</p>
+</li>
+</ol>
+<p>mirrorlist.mingw32文件添加一行，Server = <a href="http://mirrors.ustc.edu.cn/msys2/mingw/i686/">http://mirrors.ustc.edu.cn/msys2/mingw/i686/</a></p>
+<p>mirrorlist.mingw64文件添加一行，Server = <a href="http://mirrors.ustc.edu.cn/msys2/mingw/x86_64/">http://mirrors.ustc.edu.cn/msys2/mingw/x86_64/</a></p>
+<p>mirrorlist.msys文件添加一行，Server = <a href="http://mirrors.ustc.edu.cn/msys2/msys/$arch/">http://mirrors.ustc.edu.cn/msys2/msys/$arch/</a></p>
+<ol start="3">
+<li>在win10菜单中找到MSYS 64bit并启动MSYS2 MinGW 64-bit</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20211118160327.png"><br><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20211118160342.png"></p>
+<ol start="4">
+<li>认识下命令</li>
+</ol>
+<p>pacman -Syu =&gt; 同步软件库并更新系统到最新状态</p>
+<p>pacman -S package_name1 package_name2 =&gt; 安装或者升级单个软件包，或者一列软件包（包含依赖包）</p>
+<p>pacman -R package_name =&gt; 删除单个软件包</p>
+<p>pacman -Rs package_name =&gt; 删除指定软件包，及其所有没有被其他已安装软件包使用的依赖关系</p>
+<ol start="5">
+<li><p>输入pacman -Syu 更新软件库, 完结后直接点击关闭按钮来关闭窗口</p>
+</li>
+<li><p>重新来一次第2个步骤(这个时候因为更新软件库的原因导致第2个步骤里面的三个文件被覆盖了)</p>
+</li>
+<li><p>使用命令安装mingw64等必要的软件(一个一个地安装)</p>
+</li>
+</ol>
+<p>pacman -S gcc</p>
+<p>pacman -S mingw-w64-x86_64-toolchain</p>
+<p>pacman -S mingw-w64-i686-toolchain</p>
+<p>pacman -S mingw-w64-x86_64-SDL2</p>
+<p>pacman -S mingw-w64-i686-SDL2</p>
+<p>pacman -S base-devel</p>
+<p>pacman -S vim</p>
+<p>pacman -S yasm</p>
+<p>pacman -S nasm</p>
+<p>pacman -S make</p>
+]]></content>
+      <tags>
+        <tag>win10</tag>
+        <tag>msys2</tag>
+        <tag>mingw</tag>
+      </tags>
+  </entry>
 </search>
