@@ -17,6 +17,33 @@
       </tags>
   </entry>
   <entry>
+    <title>CentOS7 自动获取IP地址图文详解</title>
+    <url>/2021/11/16/CentOs7%20%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96IP%E5%9C%B0%E5%9D%80%E5%9B%BE%E6%96%87%E8%AF%A6%E8%A7%A3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>环境:<br>VMware workstation 12<br>CentOs7</p>
+<p>当我们在VMware workstation 安装好CentOs后，IP地址默认不是自动获取的，如下图：<br><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151648.png"></p>
+<p>要设置CentOs7自动获取IP地址，需要进入系统网络配置文件夹，输入命令 ： “cd /etc/sysconfig/network-scripts/”，然后再输入 “ls” ,如下图所示：</p>
+<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151714.png"></p>
+<p>然后可以直接输入 “vi ifcfg-ens33” 进行修改，如下图 ：</p>
+<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151736.png"></p>
+<p>修改后如下：</p>
+<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151804.png"></p>
+<p>当然也可以直接输入 ： “ vi /etc/sysconfig/network-scripts/ifcfg-ens33 “ 进行编辑，如下图：</p>
+<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151822.png"></p>
+<p>修改完成后，“ :wq! ” 保存并退出，接下来就是重启网络服务咯，可以在根目录直接</p>
+<p>输入“service network restart” 重启, 当然也有的人可能遇到有的CentOs版本</p>
+<p>对“Service network restart”命令不起作用，但是我告诉还有一种方法，进入</p>
+<p>到普通用户可以使用的命令的存放目录 “/bin”下，</p>
+<p>再输入 “ Systemctl restart network”，具体如下图：<br><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151850.png"></p>
+<p>注意，老版的Centos查看ip地址命令为 : “ ipconfig -a “ ,Centos7版本为 ： “ ip addr “ </p>
+<p>好了，修改完成后输入： “ ip addr “ ， 进行查看，如下图 : </p>
+<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151914.png"></p>
+]]></content>
+      <tags>
+        <tag>CentOS</tag>
+        <tag>CentOS7</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VMware Workstation Pro v16.2.1 官方版+激活密钥</title>
     <url>/2021/11/18/VMware%20Workstation%20Pro%20v16.2.1%20%E5%AE%98%E6%96%B9%E7%89%88+%E6%BF%80%E6%B4%BB%E5%AF%86%E9%92%A5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>VMware Workstation Pro 是将多个操作系统作为虚拟机 (VM) 在单台 Linux 或 Windows PC 上运行的行业标准。为任何设备、平台或云环境构建、测试或演示软件的 IT 专业人员、开发人员和企业都可以信赖 Workstation Pro。</p>
@@ -53,33 +80,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CentOS7 自动获取IP地址图文详解</title>
-    <url>/2021/11/16/CentOs7%20%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96IP%E5%9C%B0%E5%9D%80%E5%9B%BE%E6%96%87%E8%AF%A6%E8%A7%A3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>环境:<br>VMware workstation 12<br>CentOs7</p>
-<p>当我们在VMware workstation 安装好CentOs后，IP地址默认不是自动获取的，如下图：<br><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151648.png"></p>
-<p>要设置CentOs7自动获取IP地址，需要进入系统网络配置文件夹，输入命令 ： “cd /etc/sysconfig/network-scripts/”，然后再输入 “ls” ,如下图所示：</p>
-<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151714.png"></p>
-<p>然后可以直接输入 “vi ifcfg-ens33” 进行修改，如下图 ：</p>
-<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151736.png"></p>
-<p>修改后如下：</p>
-<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151804.png"></p>
-<p>当然也可以直接输入 ： “ vi /etc/sysconfig/network-scripts/ifcfg-ens33 “ 进行编辑，如下图：</p>
-<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151822.png"></p>
-<p>修改完成后，“ :wq! ” 保存并退出，接下来就是重启网络服务咯，可以在根目录直接</p>
-<p>输入“service network restart” 重启, 当然也有的人可能遇到有的CentOs版本</p>
-<p>对“Service network restart”命令不起作用，但是我告诉还有一种方法，进入</p>
-<p>到普通用户可以使用的命令的存放目录 “/bin”下，</p>
-<p>再输入 “ Systemctl restart network”，具体如下图：<br><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151850.png"></p>
-<p>注意，老版的Centos查看ip地址命令为 : “ ipconfig -a “ ,Centos7版本为 ： “ ip addr “ </p>
-<p>好了，修改完成后输入： “ ip addr “ ， 进行查看，如下图 : </p>
-<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210619151914.png"></p>
-]]></content>
-      <tags>
-        <tag>CentOS</tag>
-        <tag>CentOS7</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Visual Studio 2019密钥</title>
     <url>/2021/06/24/Visual%20Studio%202019%E5%AF%86%E9%92%A5/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Visual Studio 2019 Enterprise（企业版）：<strong>BF8Y8-GN2QH-T84XB-QVY3B-RC4DF</strong></p>
@@ -88,30 +88,6 @@
       <tags>
         <tag>密钥</tag>
         <tag>Visual Studio</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vuetify前端搭建</title>
-    <url>/2020/12/31/Vuetify%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><ol>
-<li><p>启动vue-cli：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">输入：vue ui</span><br></pre></td></tr></table></figure></li>
-<li><p>参考：<br> <a href="https://blog.csdn.net/qq_42711864/article/details/85704099">https://blog.csdn.net/qq_42711864/article/details/85704099</a></p>
-</li>
-<li><p>添加vuetify：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">选择：vue add vuetify</span><br></pre></td></tr></table></figure></li>
-<li><p>main.ts代码：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">import Vue from &quot;vue&quot;;</span><br><span class="line">// import Vuetify from &quot;vuetify&quot;;</span><br><span class="line">import App from &quot;./App.vue&quot;;</span><br><span class="line">import Test from &#x27;./views/Test.vue&#x27;;</span><br><span class="line">import router from &quot;./router&quot;;</span><br><span class="line">import store from &quot;./store&quot;;</span><br><span class="line">import &quot;vuetify/dist/vuetify.min.css&quot;; //css 需引入</span><br><span class="line">import &quot;material-design-icons-iconfont/dist/material-design-icons.css&quot;; //vuetify依赖的图标</span><br><span class="line">import vuetify from &quot;./plugins/vuetify&quot;;</span><br><span class="line"></span><br><span class="line">// Vue.use(Vuetify);</span><br><span class="line">Vue.config.productionTip = false;</span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">  router,</span><br><span class="line">  store,</span><br><span class="line">  vuetify,</span><br><span class="line">  render: h =&gt; h(Test)</span><br><span class="line">&#125;).$mount(&quot;#app&quot;);</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h5 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h5><ul>
-<li><a href="https://vuetifyjs.com/en/getting-started/installation/#vue-cli-install">Vue官网</a></li>
-<li><a href="https://blog.csdn.net/u011737005/article/details/105822944">vue+vuetify+typescript中添加vuetify声明</a></li>
-<li><a href="https://blog.csdn.net/qq_42711864/article/details/85704099">TypeScript+Vue+vuetify的项目搭建</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Vuetify</tag>
-        <tag>Vue</tag>
       </tags>
   </entry>
   <entry>
@@ -137,83 +113,27 @@
       </tags>
   </entry>
   <entry>
-    <title>搭建Hexo博客</title>
-    <url>/2021/11/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
-<li><p><strong>hexo搭建</strong><br>参考：<a href="https://eliyar.biz/how_to_build_hexo_blog/">https://eliyar.biz/how_to_build_hexo_blog/</a></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm i hexo-cli -g</span><br><span class="line">hexo init</span><br><span class="line">npm i</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
-<li><p><strong>hexo编译报错</strong><br>解决方法：node10升级到node14.</p>
+    <title>Vuetify前端搭建</title>
+    <url>/2020/12/31/Vuetify%E5%89%8D%E7%AB%AF%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><ol>
+<li><p>启动vue-cli：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">输入：vue ui</span><br></pre></td></tr></table></figure></li>
+<li><p>参考：<br> <a href="https://blog.csdn.net/qq_42711864/article/details/85704099">https://blog.csdn.net/qq_42711864/article/details/85704099</a></p>
 </li>
-<li><p><strong>hexo init 卡主</strong><br>解决方法：<br>D:\nodejs\node_global\node_modules\hexo-cli\lib\console\init.js文件中，<br>const GIT_REPO_URL = ‘<a href="https://github.com/hexojs/hexo-starter.git&#39;">https://github.com/hexojs/hexo-starter.git&#39;</a> 修改为：<br>const GIT_REPO_URL = ‘<a href="https://github.com/">https://github.com</a> <strong>.cnpmjs.org</strong> /hexojs/hexo-starter.git’;</p>
-</li>
-<li><p><strong>github部署</strong><br>参考：<a href="https://cloud.tencent.com/developer/article/1662782">https://cloud.tencent.com/developer/article/1662782</a></p>
-</li>
-<li><p><strong>hexo d提交报警告：warning: CRLF will be replaced by LF in public/assets/css/style.css</strong><br>解决方法，参考：<a href="https://www.codegrepper.com/code-examples/whatever/warning%3A+CRLF+will+be+replaced+by+LF+in+public%2Fassets%2Fcss%2Fstyle.css">https://www.codegrepper.com/code-examples/whatever/warning%3A+CRLF+will+be+replaced+by+LF+in+public%2Fassets%2Fcss%2Fstyle.css</a>.</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global core.autocrlf input</span><br></pre></td></tr></table></figure></li>
+<li><p>添加vuetify：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">选择：vue add vuetify</span><br></pre></td></tr></table></figure></li>
+<li><p>main.ts代码：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">import Vue from &quot;vue&quot;;</span><br><span class="line">// import Vuetify from &quot;vuetify&quot;;</span><br><span class="line">import App from &quot;./App.vue&quot;;</span><br><span class="line">import Test from &#x27;./views/Test.vue&#x27;;</span><br><span class="line">import router from &quot;./router&quot;;</span><br><span class="line">import store from &quot;./store&quot;;</span><br><span class="line">import &quot;vuetify/dist/vuetify.min.css&quot;; //css 需引入</span><br><span class="line">import &quot;material-design-icons-iconfont/dist/material-design-icons.css&quot;; //vuetify依赖的图标</span><br><span class="line">import vuetify from &quot;./plugins/vuetify&quot;;</span><br><span class="line"></span><br><span class="line">// Vue.use(Vuetify);</span><br><span class="line">Vue.config.productionTip = false;</span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">  router,</span><br><span class="line">  store,</span><br><span class="line">  vuetify,</span><br><span class="line">  render: h =&gt; h(Test)</span><br><span class="line">&#125;).$mount(&quot;#app&quot;);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h5 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h5><ul>
+<li><a href="https://vuetifyjs.com/en/getting-started/installation/#vue-cli-install">Vue官网</a></li>
+<li><a href="https://blog.csdn.net/u011737005/article/details/105822944">vue+vuetify+typescript中添加vuetify声明</a></li>
+<li><a href="https://blog.csdn.net/qq_42711864/article/details/85704099">TypeScript+Vue+vuetify的项目搭建</a></li>
 </ul>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给博客添加Waline评论</title>
-    <url>/2021/11/16/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0Waline%E8%AF%84%E8%AE%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
-<li>参考文档：<br><a href="https://waline.js.org/get-started.html#vercel-%E9%83%A8%E7%BD%B2">Waline-快速上手</a></li>
-<li>需要使用LeanCloud，参考：<br><a href="https://console.leancloud.app/apps">LeanCloud - https://console.leancloud.app/apps</a></li>
-<li>Vercel部署：<br>直接点击：<a href="https://vercel.com/new/git/external?repository-url=https://github.com/walinejs/waline/tree/main/example">Vercel</a><br>一定要从leancloud拿到 <strong>LEAN_ID</strong>，<strong>LEAN_KEY</strong>，<strong>LEAN_MASTER_KEY</strong></li>
-<li>获取serverURL<br>部署后，点击visit，拿到serverURL， <a href="https://xxxxxx.vercel.app,配置到主题.xml/">https://xxxxxx.vercel.app，配置到主题.xml</a></li>
-<li>注册管理员。<br>点击<serverURL>/ui/register注册。</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>博客</tag>
-        <tag>waline</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>玩skynet服务器（一）</title>
-    <url>/2021/11/16/%E7%8E%A9skynet%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><ul>
-<li><a href="https://github.com/cloudwu/skynet/wiki">Home</a></li>
-<li><a href="https://github.com/cloudwu/skynet/wiki/GettingStarted">GettingStarted</a></li>
-<li><a href="https://github.com/cloudwu/skynet/wiki/Community">社区</a></li>
-</ul>
-<p>skynet，github链接：<br><a href="https://github.com/cloudwu/skynet/">https://github.com/cloudwu/skynet/</a></p>
-<h3 id="实操踩坑"><a href="#实操踩坑" class="headerlink" title="实操踩坑"></a>实操踩坑</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/cloudwu/skynet.git</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 替换为cnpmjs.org:</span></span><br><span class="line">git clone https://github.com.cnpmjs.org/cloudwu/skynet.git</span><br><span class="line">cd skynet</span><br><span class="line">make &#x27;linux&#x27; # make &#x27;PLATFORM&#x27;  # PLATFORM can be linux, macosx, freebsd now</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>提示报错：</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210608142947.png"></p>
-<p>缺少make。解决方法 - 运行安装make命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum install gcc automake autoconf libtool make</span><br></pre></td></tr></table></figure>
-
-
-
-<ul>
-<li>提示报错：</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">autoconf: command not found</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 解决方法：</span></span><br><span class="line">yum install autoconf</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>skynet</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网页收藏（私人）</title>
-    <url>/2021/11/16/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F%EF%BC%88%E7%A7%81%E4%BA%BA%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
-<li><a href="https://www.markdown.xyz/">Markdown基本语法</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>网页</tag>
-        <tag>收藏</tag>
+        <tag>Vue</tag>
+        <tag>Vuetify</tag>
       </tags>
   </entry>
   <entry>
@@ -265,15 +185,9 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
+    <title>在Windows下编译QuickJS</title>
     <url>/2021/11/18/%E5%9C%A8Windows%E4%B8%8B%E7%BC%96%E8%AF%91QuickJS/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>title: 在Windows下编译QuickJS<br>date: 2021-11-18 17:00:04<br>tags:</p>
-<ul>
-<li>windows</li>
-<li>quickjs</li>
-<li>msys2</li>
-</ul>
-<p>本文介绍如何在Windows下依赖MSYS2编译QuickJS。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>本文介绍如何在Windows下依赖MSYS2编译QuickJS。</p>
 <h2 id="安装MSYS2"><a href="#安装MSYS2" class="headerlink" title="安装MSYS2"></a>安装MSYS2</h2><p>这里我们采用清华大学镜像在Windows系统下安装MSYS2。</p>
 <p>安装完成后，按照pacman配置配置好镜像源（参考镜像站说明）。</p>
 <h2 id="安装QuickJS环境"><a href="#安装QuickJS环境" class="headerlink" title="安装QuickJS环境"></a>安装QuickJS环境</h2><p>由于Windows下目前只支持32位系统编译，这里我们安装32位系统的编译环境</p>
@@ -285,5 +199,90 @@
 <h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><p>可以在<a href="https://github.com/quickjs-zh/QuickJS/pulls">QuickJS中文Issues</a>中提出。</p>
 <p>Page Index for this GitHub Wiki</p>
 ]]></content>
+      <tags>
+        <tag>msys2</tag>
+        <tag>windows</tag>
+        <tag>quickjs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建Hexo博客</title>
+    <url>/2021/11/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
+<li><p><strong>hexo搭建</strong><br>参考：<a href="https://eliyar.biz/how_to_build_hexo_blog/">https://eliyar.biz/how_to_build_hexo_blog/</a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm i hexo-cli -g</span><br><span class="line">hexo init</span><br><span class="line">npm i</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>hexo编译报错</strong><br>解决方法：node10升级到node14.</p>
+</li>
+<li><p><strong>hexo init 卡主</strong><br>解决方法：<br>D:\nodejs\node_global\node_modules\hexo-cli\lib\console\init.js文件中，<br>const GIT_REPO_URL = ‘<a href="https://github.com/hexojs/hexo-starter.git&#39;">https://github.com/hexojs/hexo-starter.git&#39;</a> 修改为：<br>const GIT_REPO_URL = ‘<a href="https://github.com/">https://github.com</a> <strong>.cnpmjs.org</strong> /hexojs/hexo-starter.git’;</p>
+</li>
+<li><p><strong>github部署</strong><br>参考：<a href="https://cloud.tencent.com/developer/article/1662782">https://cloud.tencent.com/developer/article/1662782</a></p>
+</li>
+<li><p><strong>hexo d提交报警告：warning: CRLF will be replaced by LF in public/assets/css/style.css</strong><br>解决方法，参考：<a href="https://www.codegrepper.com/code-examples/whatever/warning%3A+CRLF+will+be+replaced+by+LF+in+public%2Fassets%2Fcss%2Fstyle.css">https://www.codegrepper.com/code-examples/whatever/warning%3A+CRLF+will+be+replaced+by+LF+in+public%2Fassets%2Fcss%2Fstyle.css</a>.</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global core.autocrlf input</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>玩skynet服务器（一）</title>
+    <url>/2021/11/16/%E7%8E%A9skynet%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><ul>
+<li><a href="https://github.com/cloudwu/skynet/wiki">Home</a></li>
+<li><a href="https://github.com/cloudwu/skynet/wiki/GettingStarted">GettingStarted</a></li>
+<li><a href="https://github.com/cloudwu/skynet/wiki/Community">社区</a></li>
+</ul>
+<p>skynet，github链接：<br><a href="https://github.com/cloudwu/skynet/">https://github.com/cloudwu/skynet/</a></p>
+<h3 id="实操踩坑"><a href="#实操踩坑" class="headerlink" title="实操踩坑"></a>实操踩坑</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/cloudwu/skynet.git</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 替换为cnpmjs.org:</span></span><br><span class="line">git clone https://github.com.cnpmjs.org/cloudwu/skynet.git</span><br><span class="line">cd skynet</span><br><span class="line">make &#x27;linux&#x27; # make &#x27;PLATFORM&#x27;  # PLATFORM can be linux, macosx, freebsd now</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>提示报错：</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Oscargw/FigureBed/master/20210608142947.png"></p>
+<p>缺少make。解决方法 - 运行安装make命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum install gcc automake autoconf libtool make</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>提示报错：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">autoconf: command not found</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 解决方法：</span></span><br><span class="line">yum install autoconf</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>skynet</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给博客添加Waline评论</title>
+    <url>/2021/11/16/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0Waline%E8%AF%84%E8%AE%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
+<li>参考文档：<br><a href="https://waline.js.org/get-started.html#vercel-%E9%83%A8%E7%BD%B2">Waline-快速上手</a></li>
+<li>需要使用LeanCloud，参考：<br><a href="https://console.leancloud.app/apps">LeanCloud - https://console.leancloud.app/apps</a></li>
+<li>Vercel部署：<br>直接点击：<a href="https://vercel.com/new/git/external?repository-url=https://github.com/walinejs/waline/tree/main/example">Vercel</a><br>一定要从leancloud拿到 <strong>LEAN_ID</strong>，<strong>LEAN_KEY</strong>，<strong>LEAN_MASTER_KEY</strong></li>
+<li>获取serverURL<br>部署后，点击visit，拿到serverURL， <a href="https://xxxxxx.vercel.app,配置到主题.xml/">https://xxxxxx.vercel.app，配置到主题.xml</a></li>
+<li>注册管理员。<br>点击<serverURL>/ui/register注册。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+        <tag>waline</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网页收藏（私人）</title>
+    <url>/2021/11/16/%E7%BD%91%E9%A1%B5%E6%94%B6%E8%97%8F%EF%BC%88%E7%A7%81%E4%BA%BA%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul>
+<li><a href="https://www.markdown.xyz/">Markdown基本语法</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>网页</tag>
+        <tag>收藏</tag>
+      </tags>
   </entry>
 </search>
