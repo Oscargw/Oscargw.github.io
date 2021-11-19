@@ -264,4 +264,26 @@
         <tag>mingw</tag>
       </tags>
   </entry>
+  <entry>
+    <title></title>
+    <url>/2021/11/18/%E5%9C%A8Windows%E4%B8%8B%E7%BC%96%E8%AF%91QuickJS/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>title: 在Windows下编译QuickJS<br>date: 2021-11-18 17:00:04<br>tags:</p>
+<ul>
+<li>windows</li>
+<li>quickjs</li>
+<li>msys2</li>
+</ul>
+<p>本文介绍如何在Windows下依赖MSYS2编译QuickJS。</p>
+<h2 id="安装MSYS2"><a href="#安装MSYS2" class="headerlink" title="安装MSYS2"></a>安装MSYS2</h2><p>这里我们采用清华大学镜像在Windows系统下安装MSYS2。</p>
+<p>安装完成后，按照pacman配置配置好镜像源（参考镜像站说明）。</p>
+<h2 id="安装QuickJS环境"><a href="#安装QuickJS环境" class="headerlink" title="安装QuickJS环境"></a>安装QuickJS环境</h2><p>由于Windows下目前只支持32位系统编译，这里我们安装32位系统的编译环境</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pacman -S mingw-w64-i686-toolchain</span><br><span class="line">pacman -S mingw-w64-i686-dlfcn</span><br><span class="line">pacman -S make</span><br></pre></td></tr></table></figure>
+<p>至此完成了编译环境的配置</p>
+<h2 id="编译QuickJS"><a href="#编译QuickJS" class="headerlink" title="编译QuickJS"></a>编译QuickJS</h2><p>现在我们编译QuickJS，首先我们配置下Makefile中的</p>
+<figure class="highlight makefile"><table><tr><td class="code"><pre><span class="line">prefix=/home/Administrator/quickjs</span><br></pre></td></tr></table></figure>
+<p>然后执行make install进行编译，完成编译后则在/home/Administrator/quickjs目录下看到quickjs相关的可执行文件。</p>
+<h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><p>可以在<a href="https://github.com/quickjs-zh/QuickJS/pulls">QuickJS中文Issues</a>中提出。</p>
+<p>Page Index for this GitHub Wiki</p>
+]]></content>
+  </entry>
 </search>
