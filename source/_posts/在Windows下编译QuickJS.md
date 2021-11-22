@@ -1,3 +1,4 @@
+---
 title: 在Windows下编译QuickJS
 date: 2021-11-18 17:00:04
 tags:
@@ -5,6 +6,7 @@ tags:
 - windows
 - quickjs
 - msys2
+---
 
 本文介绍如何在Windows下依赖MSYS2编译QuickJS。
 
